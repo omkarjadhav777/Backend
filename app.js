@@ -20,7 +20,12 @@ app.use('/api/users', usersRouter)
 app.use('/api/group', apiAuth.validateToken, gorupRouter)
 app.use('/api/expense', apiAuth.validateToken, expenseRouter)
 
-//To detect and log invalid api hits 
+// Root route simple message
+app.get('/', (req, res) => {
+    res.send('API is running')
+})
+
+// To detect and log invalid api hits 
 app.all('*', (req, res) => {
     logger.error(`[Invalid Route] ${req.originalUrl}`)
     res.status(404).json({
@@ -34,3 +39,4 @@ app.listen(port, (err) => {
     console.log(`Server started in PORT | ${port}`)
     logger.info(`Server started in PORT | ${port}`)
 })
+
