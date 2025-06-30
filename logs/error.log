@@ -1,0 +1,20 @@
+2025-06-30T14:42:06.875Z | ERROR  | URL : /api/group/v1/user | API Authentication Fail | message: Invalid Token
+2025-06-30T14:42:08.658Z | ERROR  | URL : /api/expense/v1/user | API Authentication Fail | message: Invalid Token
+2025-06-30T14:42:08.903Z | ERROR  | URL : /api/group/v1/user | API Authentication Fail | message: Invalid Token
+2025-06-30T14:49:49.677Z | ERROR  | DB Connection Fail | MongooseServerSelectionError: 08480000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:1605:SSL alert number 80
+
+    at Connection.openUri (C:\Users\oj687\Documents\SplitApp-main\node_modules\mongoose\lib\connection.js:819:32)
+    at C:\Users\oj687\Documents\SplitApp-main\node_modules\mongoose\lib\index.js:377:10
+    at C:\Users\oj687\Documents\SplitApp-main\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\oj687\Documents\SplitApp-main\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\oj687\Documents\SplitApp-main\node_modules\mongoose\lib\index.js:1220:10)
+    at Mongoose.connect (C:\Users\oj687\Documents\SplitApp-main\node_modules\mongoose\lib\index.js:376:20)
+    at Object.<anonymous> (C:\Users\oj687\Documents\SplitApp-main\model\schema.js:4:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+2025-06-30T14:49:56.469Z | ERROR  | URL : /api/users/v1/register | staus : undefined | message: Operation `users.findOne()` buffering timed out after 10000ms
+2025-06-30T15:05:49.407Z | ERROR  | URL : /api/expense/v1/user | staus : 400 | message: No expense present for the user
+2025-06-30T15:26:42.095Z | ERROR  | URL : /api/expense/v1/user | staus : 400 | message: No expense present for the user
+2025-06-30T15:27:01.014Z | ERROR  | URL : /api/expense/v1/user | staus : 400 | message: No expense present for the user
+2025-06-30T16:55:16.138Z | ERROR  | URL : /api/expense/v1/user | staus : 400 | message: No expense present for the user
